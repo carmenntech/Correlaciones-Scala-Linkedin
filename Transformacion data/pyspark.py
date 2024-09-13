@@ -11,7 +11,7 @@ spark = SparkSession.builder \
 # Conecta a MongoDB usando pymongo
 client = MongoClient("mongodb://172.17.0.3:27017/")
 db = client['docker']
-collection = db['items']
+collection = db['itemsscala']
 
 # Extrae los datos desde MongoDB
 mongo_data = list(collection.find())
@@ -33,15 +33,15 @@ df = spark.createDataFrame(pdf)
 
 rdd = df.select("list_items").rdd
     
-rdd_filtrado = rdd.flatMap(lambda row: row.list_items).collect()
+rdd_palabras = rdd.flatMap(lambda row: row.list_items)
+rdd_mapsuma = rdd_palabras.map(lambda x: (x, 1)).reduceByKey(lambda x , y: x + y)
+
 #rdd_sep = rdd_filtrado.map(lambda x: [[i] for i in x])
 #rdd_sep_pablabras = rdd_sep.flatMap(lambda x: x.split('|'))
 
-for element in rdd_filtrado:
-    print(element)
+rdd_mapsumaSorted = rdd_mapsuma.map(lambda x: (x[1], x[0])).sortByKey()
 
-
-
-results = rdd_filtrado.collect()
+# Recoger y mostrar los resultados
+results = rdd_mapsumaSorted.collect()
 
 print(results)

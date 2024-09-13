@@ -31,11 +31,10 @@ users_linkedin = api.search_people(keywords = 'Python')
 df_people = pd.DataFrame(users_linkedin)
 df_urn = df_people["urn_id"]
 urn_values = list(df_urn)
-list_limit = urn_values[:200]
 rows = []
 
 # Iterar sobre los resultados e imprimirlos
-for urn in list_limit:
+for urn in urn_values:
 
     resultados = api.get_profile_skills(urn_id = urn)
 
