@@ -1,7 +1,7 @@
 ## Corelacion tecnologías 
 
 
-Este proyecto muestra la corelacion entre las diferentes tecnologías que conocen los usuarios de Linkedin con los lenguajes de programación de Python y Scala 
+Este proyecto muestra la corelacion entre las diferentes tecnologías que conocen los usuarios de Linkedin con el lenguajes de programación de Scala 
 
 *insertar captura Dashboard*
 
