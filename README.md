@@ -3,7 +3,8 @@
 
 Este proyecto muestra la corelacion entre las diferentes tecnologías que conocen los usuarios de Linkedin con el lenguajes de programación de Scala 
 
-*insertar captura Dashboard*
+![image](https://github.com/user-attachments/assets/1b6c4397-53dc-4817-ab8d-ae08608cb0f7)
+
 
 Para la __extracción__ de los datos he usado la api no oficial de Linkedin (en este repositorio tienes más información sobre la extracción de los datos https://github.com/carmenntech/linkedin-search/tree/main ). 
 
