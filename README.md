@@ -1,7 +1,7 @@
-## Corelacion tecnologías 
+## Correlacion tecnologías 
 
 
-Este proyecto muestra la corelacion entre las diferentes tecnologías que conocen los usuarios de Linkedin con el lenguajes de programación de Scala 
+Este proyecto muestra la correlacion entre las diferentes tecnologías que conocen los usuarios de Linkedin con el lenguajes de programación de Scala 
 
 ![image](https://github.com/user-attachments/assets/1b6c4397-53dc-4817-ab8d-ae08608cb0f7)
 
